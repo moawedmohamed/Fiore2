@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+.Journal{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.containerOfIms{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    /* flex-wrap: wrap; */
+}
+.im1{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    margin-right: 80px;
+
+}
+.im2{
+    width: 400px;
+    height: 530px;
+
+}
+
+.containerOfIms h2{
+    color: rgb(112, 107, 107);
+
+}
+.containerOfIms h1{
+    margin-left: -1%;
+    color: rgb(112, 107, 107);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media screen and (max-width:1000px) {
+    .containerOfIms{
+        overflow-x: scroll;
+
+    }
+    .containerOfIms h1{
+        font-size: 20px;
+    }
+    .containerOfIms h2{
+        margin-left: 20px;
+    }
+    .im1{
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+    }
+    .im2{
+        width: 270px;
+        height: 300px;
+
+    }
+}
+.plants{
+    position: relative;
+    overflow: hidden;
+    overflow: hidden;
+}
+.im1{
+    object-fit: cover;
+    transition: transform 1s ease; /* انتقال سلس للحركة */
+  position: relative;
+
+}
+.im2{
+    object-fit: cover;
+    transition: transform 1s ease; /* انتقال سلس للحركة */
+    position: relative;
+
+}
+.im1:hover{
+    transform: scale(1.1);
+}
+
+.im2:hover{
+    transform: scale(1.1);
+}
+
+.im4Div{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 10%;
+}

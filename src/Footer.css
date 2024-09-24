@@ -1,0 +1,241 @@
+
+:root {
+    --bg-color: #f7f6f3;  /* Background color */
+    --text-color: #4d4d3b;  /* Text color */
+    --link-color: #4d4d3b;  /* Link color */
+    --link-hover-color: #333;  /* Link hover color */
+    --footer-bg-color: #f5f5f5;  /* Footer background color */
+    --footer-border-color: #d1d1d1;  /* Footer border color */
+    --social-icon-border: gray;  /* Social icons border color */
+    --button-bg-color: #4CAF50;  /* Button background color */
+    --button-hover-bg-color: #45a049;  /* Button hover background color */
+    --input-border-color: #ccc;  /* Input border color */
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #bb86fc;
+    --link-hover-color: #ff79c6;
+    --footer-bg-color: #1e1e1e;
+    --footer-border-color: #333;
+    --social-icon-border: #bb86fc;
+    --button-bg-color: #bb86fc;
+    --button-hover-bg-color: #3700b3;
+    --input-border-color: #444;
+}
+.footer {
+    background-color: #f7f6f3;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Centering the container and setting a max-width */
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    margin: 0 10px; /* Margin for spacing */
+}
+
+.footer-left {
+    color: #4d4d3b;
+}
+
+.brand-name {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 10;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-left address {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-left p{
+    margin-left: -70%;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #4d4d3b;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 5px;
+    font-size: 24px;
+    color: #4d4d3b;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social-icons a:hover {
+    border: 1px solid rgb(67, 66, 66);
+}
+
+.footer-bottom {
+    border-top: 1px solid #d1d1d1;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #4d4d3b;
+}
+
+.footer-bottom a {
+    color: #4d4d3b;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .brand-name {
+        font-size: 40px;
+        margin-right: 0;
+    }
+
+    .footer-left address,
+    .footer-left p {
+        font-size: 14px;
+    }
+    .footer-left p{
+        margin-right: -70%;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-name {
+        font-size: 30px;
+    }
+
+    .footer-left address,
+    .footer-left p {
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 10px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+}
+
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--footer-bg-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--footer-border-color);
+}
+
+.social-icons a {
+    border: 1px solid var(--social-icon-border);
+}

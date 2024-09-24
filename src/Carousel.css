@@ -1,0 +1,78 @@
+/* Container for the slider */
+.slider-container {
+    width: 80%; /* Adjust the width as necessary */
+    margin: 0 auto; /* Center the slider */
+}
+
+/* Individual slide styling */
+.slide {
+    position: relative;
+    text-align: center;
+    padding-left: 30px;
+    margin-left: 0px;
+}
+
+.slide img {
+    width: 100%; /* Adjust to match the size of the image */
+    height: auto;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+}
+
+.slide h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.slide p {
+    font-size: 1rem;
+    color: #999;
+}
+
+/* Slick Arrow Buttons */
+
+
+.slick-next {
+    right: -50px;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+/* Dots Pagination Styling */
+.slick-dots li button:before {
+    color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+    color: black;
+}
+.slide button {
+    margin-left: 20px;
+    padding: 10px;
+    width: 10px;
+    position: absolute;
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    opacity: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: black; 
+    cursor: pointer;  
+}
+.slide button:hover{
+    opacity: 1;
+
+}
+@media (max-width: 768px) {
+    .slick-arrow {
+        width: 25px;
+        height: 25px;
+        right: -30px;
+        left: -30px;
+    }
+}

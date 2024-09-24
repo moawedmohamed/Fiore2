@@ -1,0 +1,116 @@
+/* Default (Light Mode) Styles */
+.nav {
+  position: sticky;
+  top :0px;
+  z-index: 1000;
+  padding: 10px;
+  height: 100px;
+}
+.Navbar {
+}
+.Navbar {
+  width: 100%;
+  /* padding: 10px; */
+  margin-top: -6%;
+  background-color: rgb(226, 226, 226); /* Light mode color */
+}
+.custom-nav {
+  display: flex;
+  justify-content: center; /* Center the items */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.custom-nav .nav-link {
+  margin: 0 15px; /* Adjust spacing between links */
+}
+.custom-nav .nav-link:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Navbar h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-top: 70px;
+  font-weight: 300;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.input {
+  margin-top: 30px;
+}
+
+.head {
+  margin-top: -6px;
+  flex-wrap: wrap ;
+}
+.leftIcons a {
+  text-decoration: none;
+}
+.leftIcons p{
+  color: black;
+}
+.leftIcons a:hover{
+  text-decoration: underline ;
+}
+
+/* Dark Mode Styles */
+.dark-mode .nav {
+  background-color: #333; /* Dark background */
+}
+
+.dark-mode .Navbar {
+  background-color: #444; /* Darker background */
+}
+
+.dark-mode .Navbar h1 {
+  color: #fff; /* Light text color */
+}
+
+.dark-mode .input {
+  background-color: #555; /* Dark input background */
+  color: #fff; /* Light text color */
+  border: 1px solid #666; /* Optional: Darker border */
+}
+
+/* Ensure other related elements also adapt to dark mode */
+.dark-mode input {
+  background-color: #555; /* Dark input background */
+  color: #fff; /* Light text color */
+  border: 1px solid #666; /* Optional: Darker border */
+}
+@media (max-width: 768px) {
+  .Navbar h1 {
+    font-size: 40px; /* Adjust font size */
+  }
+
+  .input {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile and smaller screens */
+@media (max-width: 500px) {
+  .nav{
+    margin-top: 5%;
+  }
+  .Navbar {
+    padding: 5px;
+    margin-top: -100px;
+  }
+  .head{
+    margin-top: 20px;
+  }
+  .Navbar h1 {
+    margin-top: 50px;
+    font-size: 30px; /* Further adjust font size */
+  }
+
+  .input {
+    margin-top: 15px;
+    width: 10px;
+    padding-left: -10px;
+ /* Add padding for better touch experience */
+  }
+}

@@ -1,0 +1,33 @@
+.containerOfImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.containerOfImages img{
+    width: 230px;
+    height: 200px;
+}
+.follow{
+    margin-top: 12%;
+    margin-bottom: 2%;
+  font-family: "Times New Roman", Times, serif;
+
+}
+.lastLetter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.lastLetter img{
+    width: 100px;
+
+}
+.fa-star{
+    color: rgb(47, 69, 25);
+    font-size: 18px;
+}

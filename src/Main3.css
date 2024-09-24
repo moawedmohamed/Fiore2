@@ -1,0 +1,313 @@
+.imgs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    transition: all ease-in-out 0.3s;
+    /* Adding a smooth transition */
+    overflow-y: hidden;
+    margin-left: -3%;
+    /* width: 300px; */
+}
+
+.imgs p {
+    display: flex;
+    justify-content: center;
+}
+
+.image1 {
+    transition: transform 0.5s ease-in-out;
+    /* Define the transition for the image */
+    transform: scale(0.9);
+    /* Start with a smaller scale */
+    width: 300px;
+}
+
+.image1:hover {
+    transform: scale(1.1);
+    /* Enlarge the image when hovered */
+}
+
+.image1 p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 35%;
+}
+
+.image5 {
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 232, 232);
+    height: 250px;
+    width: 250px;
+    margin-left: 43.5%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center top;
+}
+
+.PMain3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 3%;
+    margin-top: -10%;
+    font-size: 50px;
+    font-weight: 700;
+    transition: font-size 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 900px) {
+    .PMain3 {
+        font-size: 20px;
+        margin-left: -10px;
+        margin-top: -90px;
+    }
+
+    .image5 {
+        display: flex;
+        margin-left: 100px;
+    }
+}
+
+.image6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1,
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1 {
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.slide {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.slide {
+    width: 400px;
+}
+
+.TOtalSlides {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+}
+
+.slide {
+    position: relative;
+    /* overflow: scroll; */
+    /* Ensures that the image doesn't overflow the container */
+}
+
+.slide img {
+    height: auto;
+    transition: transform 0.4s ease-in-out;
+    /* Smooth transition for the zoom effect */
+
+}
+
+.slide:hover img {
+    transform: scale(1.1);
+    /* Scale the image to 110% when hovered */
+}
+
+.slide .add-to-cart {
+    opacity: 0;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    position: absolute;
+    bottom: 20px;
+    /* Adjust the position of the button as needed */
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 60px;
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-to-cart {
+    animation: none;
+
+}
+
+/* Show the button when hovering over the slide */
+.slide:hover .add-to-cart {
+    opacity: 1;
+    /* Fade in the button on hover */
+    animation: animate__animated animate__backInUp 0.5s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background-color: #708a3f;
+}
+
+.midBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midBtn button {
+    margin-top: 60px;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    border: 0.5px solid black;
+    margin-bottom: 15%;
+}
+
+.midBtn button:hover {
+    background-color: #708a3f;
+}
+
+.final {
+    width: 90%;
+    background-color: rgb(242, 228, 203);
+    /* display: flex; */
+    display: flex;
+    flex-direction: row;
+    /* Arrange items side by side */
+    align-items: flex-start;
+}
+
+
+.final {
+    display: flex;
+    padding: 90px;
+    height: 100vh;
+    padding-right: -10%;
+    margin-left: 5%;
+
+    /* يجعل الصورة في منتصف الصفحة */
+    background-color: rgb(212, 212, 212);
+    /* لون الخلفية */
+}
+
+.picture {
+    width: 400px;
+    height: 350px;
+    padding: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* تأثير الظل */
+    background-color: #708a3f;
+    width: 43%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.pic {
+    width: 650px;
+    height: 430px;
+}
+
+.first {
+    display: flex;
+    white-space: nowrap;
+    font-size: 45px;
+    margin-left: -30%;
+    margin-top: -10%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.secondP {
+    font-size: 20px;
+    padding-top: 0%;
+    margin-left: 18%;
+}
+
+.Discover {
+    padding-top: 20%;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Automatically size rows */
+}
+
+.thirdP {
+    margin-left: -50%;
+}
+
+.thirdP:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .final {
+        flex-direction: column;
+        padding-left: 12%;
+        /* Apply to the container, not .final */
+    }
+
+    .Discover {
+        margin-top: 20px;
+        /* Use px or another unit for margin */
+    }
+
+    .first {
+        margin-left: 10%;
+        /* Adjust margin as needed */
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .first {
+        margin-left: 10%;
+        /* Adjust margin as needed */
+    }
+
+    .picture {
+        width: 300px;
+        height: 250px;
+        padding: 250px;
+        margin-left: -10%;
+    }
+
+    .pic {
+        width: 300px;
+    }
+}
+@media screen and (max-width:700px) {
+    .final{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

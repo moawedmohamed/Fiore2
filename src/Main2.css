@@ -1,0 +1,25 @@
+.img1 {
+  background-color: rgb(60, 91, 50);
+  width: 400px;
+  height: 600px;
+}
+.hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hover:hover {
+  text-decoration: underline;
+}
+.container-fluid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image3 {
+  background-color: rgb(60, 91, 50);
+  width: 400px;
+  height: 600px;
+  /* display: flex;
+    justify-content: center; */
+}

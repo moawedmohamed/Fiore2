@@ -1,0 +1,24 @@
+.first-Title{
+    margin-top: -20%;
+  }
+  .first-Title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+  }
+
+  .pra{
+    margin-top: -12px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+  }
+  .pra p{
+    margin-left: 30px;
+  }
+  .pra p:hover{
+    text-decoration: underline;
+  }

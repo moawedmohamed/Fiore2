@@ -1,0 +1,154 @@
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+}
+.header{
+    margin-top: -130px;
+    background-color: rgb(226, 226, 226);
+    height: 800px;
+    
+}
+
+
+.head{
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+.head p{
+    margin-left: 50px;
+    font-size: 18px;
+    margin-top: -10px;
+}
+.head p:hover{
+    text-decoration: underline; 
+}
+#search{
+    margin-top: -10%;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    font-size: 20px;
+    margin-left: 2%;
+    padding: 7px;
+    border-radius: 10px;
+}
+.leftIcons{
+    direction: rtl;
+    margin-top: -3%;
+    display: flex;
+    margin-right: 4%;
+}
+.leftIcons p{
+    display: flex;
+    margin-top: -1px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.leftIcons i{
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+.fa-heart{
+    font-size: 20px;
+    margin-top: 2PX;
+}
+
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  /* Apply dark mode styles to specific elements */
+  body.dark-mode .header {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-mode input[type="text"] {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+  }
+  
+  body.dark-mode p,
+  body.dark-mode h1 {
+    color: white;
+  }
+  
+  body.dark-mode .leftIcons i {
+    color: yellow; /* For icons in dark mode */
+  }
+  
+  body.dark-mode .head p {
+    color: lightgray; /* To make the text readable in dark mode */
+  }
+  
+  /* Optionally, adjust hover or active states for dark mode */
+  body.dark-mode .head p:hover {
+    color: white;
+  }
+  .word{
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  .word h1{
+    font-size: 60px;
+    color: black;
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+
+  }
+  .word button{
+    padding: 20px;
+    width: 200px;
+    border-radius: 50px;
+    color: black;
+  }
+  .word button:hover{
+    color: white;
+    background-color: black;
+  }
+  .divImg img{
+    width: 400px;
+    margin-top: 50px;
+  }
+  .divImg{
+    direction: rtl;
+    margin-right: 13%;
+    margin-top: -20%;
+  }
+  @media screen and (max-width:500px) {
+    .header{
+      height: 900px;
+    }
+    .word{ 
+      margin-left: 0%;
+      margin-top: 100%;
+      }
+      .divImg img{
+        margin-top: -300px;
+        width: 250px;
+        margin-right:80px;
+      }
+      .word button{
+        margin-top: 20px;
+      }
+      .word button{
+        margin-top: 120%;
+        margin-left: 60px;
+      }
+      .word h1{
+        font-size: 25px;
+        margin-left: 70px;
+        margin-top: -60px;
+      }
+
+  }
