@@ -5,23 +5,20 @@ function Card() {
   return (
     <>
       <div className="card">
-      <div className="titleCard">
-        <h1>Our Store</h1>
-      </div>
-        <div className="pictureOfCard">
-          <img className="picCard" src={image10}></img>
+        <div className="titleCard">
+          <h1>Our Store</h1>
         </div>
-
+        <div className="pictureOfCard">
+          <img className="picCard" alt="img" src={image10}></img>
+        </div>
         <div className="Discover2">
           <div className="First">
-            <p>Goddard  Hall 80</p>
+            <p>Goddard Hall 80</p>
             <p>Washington Square E,</p>
             <p>New York,NY 10003</p>
           </div>
           <div className="Second">
-            <p>
-              +44 (0) 207 739 1521
-            </p>
+            <p>+44 (0) 207 739 1521</p>
             <p>info@fiore.com</p>
           </div>
         </div>

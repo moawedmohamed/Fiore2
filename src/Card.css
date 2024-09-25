@@ -3,7 +3,7 @@ body{
 }
 .card {
   width: 89%;
-  background-color: rgb(163, 163, 163);
+  background-color: rgb(163, 163, 163)!important;
   display: flex;
   flex-direction: row;
   /* Arrange items side by side */
@@ -60,14 +60,7 @@ body{
     width: 20px;
   }
 }
-.first2 {
-  display: flex;
-  white-space: nowrap;
-  font-size: 45px;
-  margin-left: -30%;
-  margin-top: -10%;
-  font-family: "Times New Roman", Times, serif;
-}
+
 
 @media screen and (max-width: 900px) {
   .card {
@@ -80,18 +73,9 @@ body{
     margin-top: 20px;
     /* Use px or another unit for margin */
   }
-
-  .first2 {
-    margin-left: 10%;
-    /* Adjust margin as needed */
-  }
 }
 
 @media screen and (max-width: 1400px) {
-  .first2 {
-    margin-left: 10%;
-    /* Adjust margin as needed */
-  }
 
   .pictureOfCard {
     width: 300px;
@@ -179,6 +163,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .Second p:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 .card{
   position: relative;
@@ -218,10 +203,14 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: -20px;
     white-space: nowrap;
   }
+  .First p:hover{
+    text-decoration: underline;
+  }
   .First{
-    margin-top: 100px;
+    margin-top: 120px;
     margin-left: -15%;
     margin-right: 20px;
+    margin-bottom: 40px;
   }
   .Second{
     margin-top: 35%;
@@ -238,6 +227,9 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: -90px;
     white-space: nowrap;
 
+  }
+  .Second p:hover{
+    text-decoration: underline
   }
   .section{
     margin-top: -15px;
@@ -269,8 +261,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top:-20% ;
   }
 }
-.Discover2, .section {
-  background-color: white;
+.dark-mode.card {
+  background-color: white !important;
   color: black;
 }
 
