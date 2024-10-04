@@ -26,7 +26,7 @@ export default function Header() {
           <button>SHOW NOW</button>
         </div>
         <div className="divImg">
-          <img   src={image}></img>
+          <img src={image} alt="img"></img>
         </div>
       </div>
     </>

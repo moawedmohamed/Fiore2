@@ -21,40 +21,44 @@ function Main3() {
         style={{
           fontFamily: " 'Times New Roman', Times, serif",
           display: "flex",
-          justifyContent:"center",
-          alignItems:"center"
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         Shop by Popular Ocasions
       </h1>
       <div className="imgs">
         <div className="image1">
-          <img src={image1}></img>
+          <img src={image1} alt="img"></img>
           <p>Christmas</p>
         </div>
         <div className="image1">
-          <img src={image2}></img>
+          <img src={image2} alt="img"></img>
           <p>Birthday</p>
         </div>
         <div className="image1">
-          <img src={image3}></img>
+          <img src={image3} alt="img"></img>
           <p>Autumn</p>
         </div>
         <div className="image1">
-          <img src={image4}></img>
+          <img src={image4} alt="img"></img>
           <p>Anniversary</p>
         </div>
       </div>
       <div></div>
       <div className="image5">
-        <img style={{ height: "300px", width: "600px" }} src={image5}></img>
+        <img
+          style={{ height: "300px", width: "600px" }}
+          alt="img"
+          src={image5}
+        ></img>
       </div>
       <p className="PMain3">
         A parent and Family <br></br> Owned Luxury Floral <br></br> Boutique
       </p>
       <div>
         <div className="image6">
-          <img src={image6}></img>
+          <img src={image6} alt="img"></img>
         </div>
       </div>
       <div className="text">
@@ -95,7 +99,7 @@ function Main3() {
       <div>
         <div className="final">
           <div className="picture">
-            <img className="pic" src={image10}></img>
+            <img className="pic" src={image10} alt="img"></img>
           </div>
           <div className="Discover">
             <p className="first">
@@ -110,7 +114,6 @@ function Main3() {
           </div>
         </div>
       </div>
-    
     </>
   );
 }

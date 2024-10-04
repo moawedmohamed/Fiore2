@@ -311,3 +311,8 @@ p {
         align-items: center;
     }
 }
+@media screen and (max-width:500px) {
+    .final{
+        margin-left: 0px;
+    }
+}

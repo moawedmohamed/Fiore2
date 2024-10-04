@@ -16,6 +16,7 @@ export default function Main2() {
               borderStartEndRadius: "50%",
             }}
             src={image1}
+            alt="img"
           ></img>
           <h1
             style={{
@@ -47,6 +48,7 @@ export default function Main2() {
               height: "600px",
             }}
             src={image2}
+            alt="img"
           ></img>
         </div>
         <div className="image3">
@@ -57,6 +59,7 @@ export default function Main2() {
               marginLeft: "45px",
             }}
             src={image3}
+            alt="img"
           ></img>
 
           <h1

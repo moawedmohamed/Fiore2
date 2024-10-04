@@ -13,22 +13,22 @@ function Photos() {
             <p className="follow">Follow us</p>
             <div className="containerOfImages">
                 <div>
-                    <img src={first1}></img>
+                    <img src={first1} alt="img" ></img>
                 </div>
                 <div>
-                    <img src={first2}></img>
+                    <img src={first2}alt="img" ></img>
                 </div>
                 <div>
-                    <img src={first3}></img>
+                    <img src={first3}alt="img" ></img>
                 </div>
                 <div>
-                    <img src={first4}></img>
+                    <img src={first4}alt="img" ></img>
                 </div>
                 <div>
-                    <img src={first5}></img>
+                    <img src={first5}alt="img" ></img>
                 </div>
                 <div>
-                    <img src={first6}></img>
+                    <img src={first6}alt="img" ></img>
                 </div>
 
 
@@ -40,7 +40,7 @@ function Photos() {
                         Excellent
                     </p>
                 </div>
-                <div>
+                <div className="star">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -58,8 +58,10 @@ function Photos() {
                         7,980 reviews
                     </p>
                 </div>
-                <div>
-                    <img src={first7}></img>
+                <div style={{
+                    marginTop:"-20px"
+                }} >
+                    <img src={first7} alt="img" ></img>
                 </div>
 
             </div>

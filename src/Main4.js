@@ -8,13 +8,13 @@ import im4ge4 from "./website3/image.png";
 // import image3 from "";
 function Main4() {
   return (
-    <>
+    <div>
       <div className="Journal">
         <p>The Journal</p>
       </div>
       <div className="containerOfIms">
         <div className="Plants">
-          <img className="im1" src={image1}></img>
+          <img className="im1" alt="img" src={image1}></img>
           <h2>Plants</h2>
           <h1>Celebrating: Diversity and pride</h1>
           <p>
@@ -24,7 +24,7 @@ function Main4() {
           </p>
         </div>
         <div className="Plants">
-          <img className="im2" src={image2}></img>
+          <img className="im2"alt="img"  src={image2}></img>
           <h2>Plants</h2>
           <h1>Seasonal favourite: Peonies</h1>
           <p>
@@ -34,7 +34,7 @@ function Main4() {
           </p>
         </div>
         <div className="Plants">
-          <img className="im1" src={image3}></img>
+          <img className="im1"alt="img"  src={image3}></img>
           <h2>Plants</h2>
           <h1>How to dress a festive table</h1>
           <p>
@@ -45,9 +45,9 @@ function Main4() {
         </div>
       </div>
       <div className="im4Div">
-        <img className="im4" src={im4ge4}></img>
+        <img className="im4" alt="img" src={im4ge4}></img>
       </div>
-    </>
+    </div>
   );
 }
 

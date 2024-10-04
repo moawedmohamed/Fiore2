@@ -3,42 +3,52 @@ import image10 from "./website3/img24.jpg";
 import "./Card.css";
 function Card() {
   return (
-    <>
+    <section className="full">
       <div className="card">
-        <div className="titleCard">
-          <h1>Our Store</h1>
+        <div className="img">
+          <img src={image10} alt="img" />
         </div>
-        <div className="pictureOfCard">
-          <img className="picCard" alt="img" src={image10}></img>
-        </div>
-        <div className="Discover2">
-          <div className="First">
-            <p>Goddard Hall 80</p>
-            <p>Washington Square E,</p>
-            <p>New York,NY 10003</p>
+        <br></br>
+        <div className="store-container">
+          <h1 className="store-title">Our Store</h1>
+
+          <div className="store-info">
+            <div className="left-column">
+              <p>
+                Goddard Hall 80
+                <br />
+                Washington Square E,
+                <br />
+                New York, NY 10003, USA
+              </p>
+            </div>
+            <div className="right-column">
+              <p>
+                <span>+44 (0) 207 739 1521</span>
+                <br />
+                <span>info@fiore.com</span>
+              </p>
+            </div>
+          <hr></hr>
           </div>
-          <div className="Second">
-            <p>+44 (0) 207 739 1521</p>
-            <p>info@fiore.com</p>
-          </div>
-        </div>
-        <div className="section">
-          <div className="Monday">
+          <div className="store-hours">
             <p>
-              Monday – Friday: <br></br> 7am – 7pm
+              Monday – Friday:
+              <br /> 7am – 7pm
+            </p>
+            <p>
+              Saturday – Sunday:
+              <br /> 8am – 7pm
             </p>
           </div>
-          <div className="Saturday">
-            <p>
-              Saturday – Sunday: <br></br> 8am – 7pm
-            </p>
+
+          <div className="map-button">
+            <button>VIEW ON MAP</button>
           </div>
         </div>
+        <div></div>
       </div>
-      <div className="btn1">
-        <button>VIEW ON MAP</button>
-      </div>
-    </>
+    </section>
   );
 }
 
